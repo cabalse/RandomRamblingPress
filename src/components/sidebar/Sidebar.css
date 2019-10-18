@@ -1,0 +1,17 @@
+.sidebar {
+  color: white;
+  background-color: black;
+  padding: 20px;
+}
+
+.sidebar a {
+  font-size: 25px;
+  color: white;
+  text-decoration: none;
+}
+
+.logo {
+  max-width: 90%;
+  height: auto;
+  margin-bottom: 20px;
+}
