@@ -3,6 +3,10 @@ import Container from "react-bootstrap/Container";
 import { Switch, Route } from "react-router-dom";
 
 import "./MainContent.css";
+import Home from "./../pages/Home";
+import Products from "../pages/Products";
+import Projects from "../pages/Projects";
+import About from "../pages/About";
 
 export default class MainContent extends Component {
   render() {
@@ -10,16 +14,16 @@ export default class MainContent extends Component {
       <Container fluid={true} className="mainContent">
         <Switch>
           <Route path="/products">
-            <p>Products</p>
+            <Products />
           </Route>
           <Route path="/projects">
-            <p>Projects</p>
+            <Projects />
           </Route>
           <Route path="/about">
-            <p>About</p>
+            <About />
           </Route>
           <Route path="/">
-            <p>Under Construction!</p>
+            <Home />
           </Route>
         </Switch>
       </Container>

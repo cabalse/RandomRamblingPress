@@ -2,9 +2,11 @@
   color: white;
   background-color: black;
   padding: 20px;
+  height: 100%;
 }
 
 .sidebar a {
+  height: 100%;
   font-size: 25px;
   color: white;
   text-decoration: none;

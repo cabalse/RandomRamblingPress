@@ -14,7 +14,7 @@ export default class App extends Component {
     return (
       <Router>
         <Container className="mainContainer" fluid={true}>
-          <Row>
+          <Row className="mainRow">
             <Col xs={3} className="mainContainerCol">
               <Sidebar />
             </Col>
