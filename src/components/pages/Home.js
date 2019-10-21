@@ -8,7 +8,7 @@ export default class Home extends Component {
         <p>
           Welcome to Random Rambling Press, the home of RPG adventures and
           supplements. We focus on OSR games, usually rules-agnostic or a small
-          hint of a rule system. We, ourself, play a lot different systems;
+          hint of a rule system. We, ourselves, play a lot of different systems;
           Mothership, Into the Odd, LotFP, For Coin and Blood, WhiteBox,
           WhiteHack to name a few.
         </p>
