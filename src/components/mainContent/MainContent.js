@@ -3,10 +3,10 @@ import Container from "react-bootstrap/Container";
 import { Switch, Route } from "react-router-dom";
 
 import "./MainContent.css";
-import Home from "./../pages/Home";
-import Products from "../pages/Products";
-import Projects from "../pages/Projects";
-import About from "../pages/About";
+import HomePage from "../pages/HomePage";
+import ProductsPage from "../pages/ProductsPage";
+import ProjectsPage from "../pages/ProjectsPage";
+import AboutPage from "../pages/AboutPage";
 
 export default class MainContent extends Component {
   render() {
@@ -14,16 +14,16 @@ export default class MainContent extends Component {
       <Container fluid={true} className="mainContent">
         <Switch>
           <Route path="/products">
-            <Products />
+            <ProductsPage />
           </Route>
           <Route path="/projects">
-            <Projects />
+            <ProjectsPage />
           </Route>
           <Route path="/about">
-            <About />
+            <AboutPage />
           </Route>
           <Route path="/">
-            <Home />
+            <HomePage />
           </Route>
         </Switch>
       </Container>
