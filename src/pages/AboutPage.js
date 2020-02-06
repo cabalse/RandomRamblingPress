@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 
 import jorgenProfileImage from './../resources/images/jorgen-profile.jpg';
-import { Container, Row, Col } from './../components/bootstrap/Bootstrap';
+import { FluidContainer, Row, Col } from './../components/bootstrap/Bootstrap';
 
 export default class AboutPage extends Component {
   render() {
     return (
-      <Container className="pl-0">
+      <FluidContainer className="pl-0 pr-sm-5">
         <Row>
           <Col>
             <h1>ABOUT US</h1>
@@ -78,7 +78,7 @@ export default class AboutPage extends Component {
             <br />
           </Col>
         </Row>
-      </Container>
+      </FluidContainer>
     );
   }
 }
