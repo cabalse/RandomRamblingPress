@@ -1,28 +1,26 @@
-import React, { Component } from "react";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import { BrowserRouter as Router, Link, Switch, Route } from "react-router-dom";
+import React, { Component } from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
 
-import "./App.css";
-import "bootstrap/dist/css/bootstrap.min.css";
-import Sidebar from "./components/sidebar/Sidebar";
-import MainContent from "./components/mainContent/MainContent";
+import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { FluidContainer, Row, Col } from './components/bootstrap/Bootstrap';
+import Sidebar from './components/sidebar/Sidebar';
+import MainContent from './components/mainContent/MainContent';
 
 export default class App extends Component {
   render() {
     return (
       <Router>
-        <Container className="mainContainer" fluid={true}>
-          <Row className="mainRow">
-            <Col xs={3} className="mainContainerCol">
+        <FluidContainer className="page-container pl-0">
+          <Row className="page-row">
+            <Col className="col-12 col-sm-3 col-xl-2 pr-0">
               <Sidebar />
             </Col>
-            <Col xs={9} className="mainContainerCol">
+            <Col className="content-col mt-4 mr-5 ml-5 mr-sm-1 ml-sm-1">
               <MainContent />
             </Col>
           </Row>
-        </Container>
+        </FluidContainer>
       </Router>
     );
   }

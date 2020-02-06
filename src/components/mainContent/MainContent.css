@@ -1,4 +1,10 @@
 .mainContent {
-  padding: 30px 100px 50px 30px;
-  height: 100%;
+    padding: 30px 30px 50px 30px;
+    height: 100%;
+}
+
+@media (min-width: 576px) {
+    .mainContent {
+        padding-right: 100px;
+    }
 }

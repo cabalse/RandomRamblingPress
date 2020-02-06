@@ -1,17 +1,16 @@
-import React, { Component } from "react";
-import Container from "react-bootstrap/Container";
-import { Switch, Route } from "react-router-dom";
+import React, { Component } from 'react';
+import { Switch, Route } from 'react-router-dom';
 
-import "./MainContent.css";
-import HomePage from "../pages/HomePage";
-import ProductsPage from "../pages/ProductsPage";
-import ProjectsPage from "../pages/ProjectsPage";
-import AboutPage from "../pages/AboutPage";
+import './MainContent.css';
+import HomePage from './../../pages/HomePage';
+import ProductsPage from './../../pages/ProductsPage';
+import ProjectsPage from './../../pages/ProjectsPage';
+import AboutPage from './../../pages/AboutPage';
 
 export default class MainContent extends Component {
   render() {
     return (
-      <Container fluid={true} className="mainContent">
+      <div className="">
         <Switch>
           <Route path="/products">
             <ProductsPage />
@@ -26,7 +25,7 @@ export default class MainContent extends Component {
             <HomePage />
           </Route>
         </Switch>
-      </Container>
+      </div>
     );
   }
 }

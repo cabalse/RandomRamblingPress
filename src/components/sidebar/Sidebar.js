@@ -1,42 +1,44 @@
-import React, { Component } from "react";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
-import logo from "./../../resources/logo.png";
-import "./Sidebar.css";
+import logo from './../../resources/images/logo.png';
+import './Sidebar.css';
+import { FluidContainer, Container, Row, Col } from './../bootstrap/Bootstrap';
 
 export default class Sidebar extends Component {
   render() {
     return (
-      <Container className="sidebar" fluid={true}>
-        <Row className="text-center justify-content-center">
-          <Col xs="auto">
-            <img className="logo img-fluid" src={logo} alt="logo" />
+      <FluidContainer className="sidebar">
+        <Row>
+          <Col className="col-5 col-sm-12">
+            <img src={logo} alt="logo" className="img-fluid" />
+          </Col>
+          <Col className="col-7 col-sm-12">
+            <Container className="mt-sm-4 mt-xl-0">
+              <Row className="mt-xl-0">
+                <Col className="text-sm-center">
+                  <Link to="/">Home</Link>
+                </Col>
+              </Row>
+              <Row>
+                <Col className="text-sm-center">
+                  <Link to="/products">Products</Link>
+                </Col>
+              </Row>
+              <Row>
+                <Col className="text-sm-center">
+                  <Link to="/projects">Projects</Link>
+                </Col>
+              </Row>
+              <Row>
+                <Col className="text-sm-center">
+                  <Link to="/about">About</Link>
+                </Col>
+              </Row>
+            </Container>
           </Col>
         </Row>
-        <Row className="justify-content-center">
-          <Col xs="auto">
-            <Link to="/">Home</Link>
-          </Col>
-        </Row>
-        <Row className="justify-content-center">
-          <Col xs="auto">
-            <Link to="/products">Products</Link>
-          </Col>
-        </Row>
-        <Row className="justify-content-center">
-          <Col xs="auto">
-            <Link to="/projects">Projects</Link>
-          </Col>
-        </Row>
-        <Row className="justify-content-center">
-          <Col xs="auto">
-            <Link to="/about">About</Link>
-          </Col>
-        </Row>
-      </Container>
+      </FluidContainer>
     );
   }
 }
