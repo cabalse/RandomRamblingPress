@@ -1,38 +1,42 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
-import './Product.css'
-import { GetProducts } from '../../services/ProductAPI'
-import Product from '../products/Product'
+import productImage from './../../resources/images/130x200.jpg';
+import './products.css';
+
+import { GetProducts } from './../../services/ProductAPI';
+import {
+  FluidContainer,
+  Container,
+  Row,
+  Col,
+  Image
+} from './../../components/bootstrap/Bootstrap';
 
 export default class Products extends Component {
-    constructor() {
-        super()
-        this.state = { isLoaded: false, products: [] }
-    }
-    componentDidMount() {
-        this.setState({ isLoaded: true, products: GetProducts() })
-    }
-    render() {
-        return (
-            <>
-                <p>Some Text for productlist</p>
-                <div className="">
-                    <div className="">
-                        <div className="">
-                            {this.state.isLoaded ? (
-                                this.state.products.map(product => (
-                                    <Product
-                                        key={product.id}
-                                        product={product}
-                                    />
-                                ))
-                            ) : (
-                                <p>Loading ...</p>
-                            )}
-                        </div>
-                    </div>
-                </div>
-            </>
-        )
-    }
+  constructor() {
+    super();
+    this.state = { isLoaded: false, productData: [] };
+  }
+
+  componentDidMount() {
+    this.setState({ isloaded: true, productData: GetProducts() });
+  }
+
+  render() {
+    return (
+      <Row className="product">
+        <Col className="">
+          <Image src={productImage} />
+        </Col>
+        <Col className="">
+          <h1>Dungescape</h1>
+          Aliquam erat volutpat. In ac ultrices eros. In vel eros ut neque
+          laoreet fringilla. Vivamus pretium, lacus eu hendrerit feugiat, magna
+          orci posuere dolor, id rhoncus nisi erat ut tellus. Nulla cursus dolor
+          et nulla euismod volutpat. Suspendisse finibus vel nunc at euismod.
+          Morbi eu varius leo.
+        </Col>
+      </Row>
+    );
+  }
 }

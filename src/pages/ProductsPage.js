@@ -1,11 +1,18 @@
 import React, { Component } from 'react';
 
+import productImage from './../resources/images/130x200.jpg';
+import dungescape1 from './../resources/images/dungescape_1.jpg';
+
+import './../components/products/products';
+
 import {
   FluidContainer,
   Container,
   Row,
-  Col
+  Col,
+  Image
 } from './../components/bootstrap/Bootstrap';
+import Products from './../components/products/products';
 
 export default class ProductsPage extends Component {
   render() {
@@ -14,66 +21,116 @@ export default class ProductsPage extends Component {
         <Row>
           <Col>
             <h1>PRODUCTS</h1>
+          </Col>
+        </Row>
+        {/*
+        <Row className="product-filter-row">
+          <Col className="product-text-filter-col col-12 col-sm-6 col-lg-3">
+            <input
+              type="text"
+              className="form-control"
+              placeholder="Search Term"
+            />
+          </Col>
+          <Col className="col-12 col-sm-6 col-lg-4">
+            <select className="form-control">
+              <option value="0">Alpabetical [A-Z]</option>
+              <option value="1">Alpabetical [Z-A]</option>
+              <option value="2">Publish Date [Newest-Oldest]</option>
+              <option value="3">Publish Date [Oldest-Newest]</option>
+              <option value="4">Random</option>
+            </select>
+          </Col>
+				</Row>
+				**/}
+        <Row className="product m-1 pt-3 pb-3">
+          <Col className="product-image col-auto">
+            <Image src={dungescape1} />
+          </Col>
+          <Col className="product-text justify-content-start">
+            <h1>The Dungescape #1</h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed
-              convallis enim. Duis venenatis, arcu eu viverra consequat, mauris
-              diam rutrum massa, sed posuere ante libero nec est. Sed ac orci
-              mollis, cursus leo eu, sagittis enim. Vestibulum et turpis lectus.
-              Nullam consequat iaculis justo placerat fringilla. Orci varius
-              natoque penatibus et magnis dis parturient montes, nascetur
-              ridiculus mus. Sed scelerisque justo in nisl tempus, non eleifend
-              justo commodo. Duis sit amet lobortis diam.
+              <i>
+                Dark and dank! The Dungeon of abandoned dreams is not a merry
+                place to be. Watered down soup and torture is on the day’s menu.
+                Not for the weak.
+                <br />
+                Like all others, you have been imprisoned without a trial,
+                unjust and mistreated. The King weeds out the rotten fruits of
+                society, his nephew, the court jester, you, all that don’t
+                please him. You will perish in the dungeons like the filth you
+                are.
+              </i>
+              <br />
+              <br />
+              The Dungescape pamphlet adventure was born from two ideas. To
+              write a small enough adventure to fit on two pages, and why not
+              try to escape a dungeon instead of exploring it.
+              <br />
+              <br />
+              The original Dunescape was a three part adventure played at the
+              Borås Game Convention 2019 using the Mörk Borg rules for the first
+              time. But from there to here the idea grew beyond two pages and
+              being a complete adventure. Now it's more like a start or middle
+              of a larger adventure, or a very short one-shot. Or it might be
+              used as a hook or a seed for a larger adventure or just a catalyst
+              for your own ideas. However you decide to use it, just have fun
+              with it.
+              <br />
+              <br />
+              Future Dungescapes will build on this theme and the next will be
+              the continuation of this as we have played it. Enjoy!
             </p>
-            <p>
-              Duis dictum sodales posuere. Pellentesque congue scelerisque urna
-              et aliquet. Donec sit amet ipsum rhoncus, faucibus sem nec,
-              blandit ligula. Duis id dolor vel felis tempus commodo quis quis
-              odio. Pellentesque semper vel tortor bibendum feugiat. Suspendisse
-              sodales nulla vitae nisl ultrices porttitor sit amet at magna.
-              Pellentesque tempor nibh semper, aliquam enim at, condimentum
-              quam. Pellentesque lacinia nulla est, non sagittis lectus
-              malesuada eu. Nullam facilisis in ex id porta. Ut bibendum elit ac
-              nisi efficitur, ac commodo nunc placerat. Nunc non orci vehicula
-              ligula imperdiet consequat. Integer feugiat, nulla et luctus
-              rutrum, urna lectus sollicitudin nunc, vel aliquam ligula lacus
-              eget lorem. Sed in velit leo. Praesent ac augue scelerisque,
-              rhoncus turpis a, rhoncus neque. Curabitur lobortis turpis vitae
-              ligula cursus, ac convallis nulla tincidunt.
-            </p>
-            <p>
-              Vivamus sit amet luctus velit. Nulla facilisi. Cras malesuada,
-              urna ut ornare tempor, dolor magna molestie erat, vitae rhoncus
-              metus risus non dolor. Aliquam consectetur orci eget est ornare,
-              et tincidunt neque pharetra. Praesent ullamcorper ante in diam
-              bibendum, id convallis dolor pulvinar. Sed pretium auctor orci,
-              vel ullamcorper ipsum egestas et. Aenean nec libero condimentum
-              risus iaculis eleifend non a justo. Nam pulvinar lacinia nibh, sed
-              iaculis metus accumsan id. Vivamus eget pretium velit. Sed ut
-              sodales leo, non tincidunt tortor. Etiam aliquam tincidunt mi
-              vitae dapibus. Maecenas finibus eu elit et malesuada. Pellentesque
-              eu felis eget lacus pulvinar tristique.
-            </p>
-            <p>
-              Aenean eu aliquet magna. Fusce nec porttitor nunc, sed commodo
-              neque. Vestibulum mollis arcu est, non luctus ipsum pharetra eget.
-              Nam posuere, mauris in feugiat bibendum, mi purus cursus dolor, ut
-              pellentesque ex massa vel nulla. Donec mattis lorem ante, in
-              elementum tortor ultricies sit amet. Quisque maximus justo tortor,
-              sit amet interdum lacus convallis ac. Aliquam et aliquam lorem.
-              Integer mi eros, fermentum quis leo ac, suscipit pretium leo. Sed
-              fermentum dignissim leo at consectetur.
-            </p>
-            <p>
-              Fusce vel elementum massa. Donec felis purus, efficitur id egestas
-              et, egestas sit amet libero. Pellentesque ac quam purus. Proin
-              augue lorem, aliquam vel ligula vel, viverra congue est. Aenean
-              semper eget magna vel tincidunt. Duis quis porttitor felis.
-              Suspendisse risus urna, tempus et neque in, dictum hendrerit
-              dolor. Cras eu ullamcorper nisi. Sed eu leo bibendum, viverra erat
-              vel, pellentesque diam. Orci varius natoque penatibus et magnis
-              dis parturient montes, nascetur ridiculus mus. Sed auctor
-              hendrerit nisi in laoreet.
-            </p>
+            <table className="product-info">
+              <tbody>
+                <tr>
+                  <th scope="row">Format</th>
+                  <td>PDF</td>
+                </tr>
+                <tr>
+                  <th scope="row">Pages</th>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <th scope="row">Status</th>
+                  <td>Downloadable</td>
+                </tr>
+                <tr>
+                  <th scope="row">Price</th>
+                  <td>Free</td>
+                </tr>
+              </tbody>
+            </table>
+            <Container className="pt-3 pl-0 ml-0">
+              <Row>
+                <Col>
+                  <a
+                    href="https://www.drivethrurpg.com/product/308610/The-Dungescape-Issue-1"
+                    target="_blank"
+                  >
+                    To download go to DriveThruRPG
+                  </a>
+                </Col>
+              </Row>
+            </Container>
+            {/*<Container className="pt-3 pl-0">
+              <Row>
+                <Col>
+                  <a href="">Read More about ...</a>
+                </Col>
+              </Row>
+		</Container>
+            <Container className="pt-3 pl-0">
+              <Row>
+                <Col>
+                  <input
+                    className="btn btn-primary col-10 col-sm-6 col-md-4 col-lg-2"
+                    type="button"
+                    value="Order"
+                  />
+                </Col>
+              </Row>
+            </Container>**/}
           </Col>
         </Row>
       </FluidContainer>

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import jorgenProfileImage from './../resources/images/jorgen-profile.jpg';
+import jorgenProfileImage from './../resources/images/jorgen_profile.jpg';
 import { FluidContainer, Row, Col } from './../components/bootstrap/Bootstrap';
 
 export default class AboutPage extends Component {
@@ -32,7 +32,10 @@ export default class AboutPage extends Component {
               offer. We usually run each publication as a small print run and
               then make them available as pdf through.
               <br />
-              <a href="https://www.drivethrurpg.com/browse/pub/15518/Random-Rambling-Press/">
+              <a
+                href="https://www.drivethrurpg.com/browse/pub/15518/Random-Rambling-Press/"
+                target="_blank"
+              >
                 Random Rambling Press on DriveThru RPG
               </a>
             </p>
@@ -40,7 +43,10 @@ export default class AboutPage extends Component {
               This site is not super dynamic, not a blog. Follow us on Instagram
               if you want to keep a closer eye on what is happening.
               <br />
-              <a href="https://www.instagram.com/random.rambling.press/">
+              <a
+                href="https://www.instagram.com/random.rambling.press/"
+                target="_blank"
+              >
                 Random Rambling Press on Instagram
               </a>
             </p>
@@ -56,7 +62,7 @@ export default class AboutPage extends Component {
             <img src={jorgenProfileImage} alt="" />
           </Col>
           <Col>
-            <b>NAME:</b> Jörgen Bengtsson
+            <b>NAME:</b> J Bengtsson
             <br />
             <b>YEARS IN HOBBY:</b> 7 years roleplaying and a lifetime
             boardgaming
