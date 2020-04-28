@@ -22,6 +22,34 @@ export var traits = [
   'Perfectionist'
 ];
 
+export var occupations = [
+  { occupation: 'Beggar', wage: 'd3', weightedPath: 'sharpness' },
+  { occupation: 'Servant', wage: '0.5', weightedPath: 'self-control' },
+  { occupation: 'Burglar', wage: '1d6', weightedPath: 'self-control' },
+  { occupation: 'Miner', wage: '10', weightedPath: 'courage' },
+  { occupation: 'Sailor', wage: '1d8', weightedPath: 'courage' },
+  { occupation: 'Peddler', wage: '1d8', weightedPath: 'sharpness' },
+  { occupation: 'Smuggler', wage: '2d8', weightedPath: 'sharpness' },
+  { occupation: 'Artisan', wage: '1d6x10', weightedPath: 'self-control' },
+  { occupation: 'Farmer', wage: '3d6', weightedPath: 'self-control' },
+  { occupation: 'Shopkeeper', wage: '4d6', weightedPath: 'sharpness' },
+  { occupation: 'Cook', wage: '1d8', weightedPath: 'courage' },
+  { occupation: 'Tradesman', wage: '1d8x10', weightedPath: 'wisdom' },
+  { occupation: 'Soldier', wage: '15', weightedPath: 'courage' },
+  { occupation: 'Policeman', wage: '30', weightedPath: 'courage' },
+  { occupation: 'Teacher', wage: '35', weightedPath: 'wisdom' },
+  { occupation: 'Shinto priest', wage: '1d8', weightedPath: 'wisdom' },
+  { occupation: 'Buddhist monk', wage: '1d8', weightedPath: 'wisdom' },
+  { occupation: 'Production worker', wage: '20', weightedPath: 'courage' },
+  { occupation: 'Factory officer', wage: '45', weightedPath: 'wisdom' },
+  {
+    occupation: 'Liberal professional',
+    wage: '50x1d3',
+    weightedPath: 'Wisdom'
+  },
+  { occupation: 'Government official', wage: '40x1d3', weightedPath: 'wisdom' }
+];
+
 export var femaleFirstName = [
   'Mami',
   'Hoshi',
