@@ -1,18 +1,19 @@
 import React from 'react';
 
-import { FluidContainer, Row, Col } from './../components/bootstrap/Bootstrap';
-import { generateYokaiHunterCharacter } from '../modules/yokaiHuntersSociaty/yokaiHuntersSociatyPCGen';
+import { FluidContainer, Row, Col } from '../../components/bootstrap/Bootstrap';
+import { generateYokaiHunterCharacter } from './yokaiHuntersSocietyPCGen';
+import './CharacterSheet.css';
 
-export default function YokaiHuntersSociety() {
+export default function CharacterSheet() {
   var character = generateYokaiHunterCharacter();
   return (
-    <FluidContainer className="pl-0 pr-sm-5">
+    <FluidContainer>
       <Row>
         <Col>
           <h1>Yokai Hunters Society</h1>
         </Col>
       </Row>
-      <Row className="mt-2">
+      <Row>
         <Col>
           Name: {character.name}
           <br />

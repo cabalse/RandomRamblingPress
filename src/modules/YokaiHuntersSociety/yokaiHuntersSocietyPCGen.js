@@ -6,11 +6,11 @@ import {
   occupations
 } from './data';
 
-const baseWeight = 1;
-const basePathWeight = 0;
-const wRed1 = -0;
-const wRed2 = -0;
-const wRed3 = -0;
+const baseWeight = 6;
+const basePathWeight = 4;
+const wRed1 = -1;
+const wRed2 = -2;
+const wRed3 = -3;
 
 export const MALE = 'male';
 export const FEMALE = 'female';

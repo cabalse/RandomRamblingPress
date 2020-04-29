@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { FluidContainer, Row, Col } from './components/bootstrap/Bootstrap';
 import Sidebar from './components/sidebar/Sidebar';
 import MainContent from './components/mainContent/MainContent';
-import YokaiHuntersSociety from './pages/YokaiHuntersSociety';
+import YokaiHuntersSocietyPage from './modules/YokaiHuntersSociety/YokaiHuntersSocietyPage';
 
 export default class App extends Component {
   render() {
@@ -15,7 +15,7 @@ export default class App extends Component {
       <Router>
         <Switch>
           <Route path="/yokai-hunters-society">
-            <YokaiHuntersSociety />
+            <YokaiHuntersSocietyPage />
           </Route>
           <Route path="/">
             <FluidContainer className="page-container pl-0">
