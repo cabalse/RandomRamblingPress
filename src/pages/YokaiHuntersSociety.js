@@ -1,13 +1,9 @@
-import React, { useEffect } from 'react';
-import $ from 'jquery';
+import React from 'react';
 
 import { FluidContainer, Row, Col } from './../components/bootstrap/Bootstrap';
 import { generateYokaiHunterCharacter } from '../modules/yokaiHuntersSociaty/yokaiHuntersSociatyPCGen';
 
 export default function YokaiHuntersSociety() {
-  useEffect(() => {
-    $('.sidebar').css('display', 'none');
-  });
   var character = generateYokaiHunterCharacter();
   return (
     <FluidContainer className="pl-0 pr-sm-5">
