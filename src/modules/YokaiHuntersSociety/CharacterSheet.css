@@ -1,0 +1,117 @@
+.characterSheet {
+  width: 500px;
+  margin-top: 40px;
+}
+
+.characterSheet .title {
+  padding-bottom: 20px;
+}
+
+.characterSheet .upperInfoSection {
+}
+
+.characterSheet .firstRow {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid black;
+  margin-bottom: 10px;
+}
+
+.characterSheet .leftPart {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+}
+.characterSheet .nameTitle {
+  margin-right: 10px;
+}
+.characterSheet .nameValue {
+  margin-right: 10px;
+}
+
+.characterSheet .rightPart {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  width: 50%;
+}
+.characterSheet .genderTitle {
+  margin-right: 10px;
+}
+.characterSheet .genderValue {
+  margin-right: 10px;
+}
+.characterSheet .ageTitle {
+  margin-right: 10px;
+}
+.characterSheet .ageValue {
+}
+
+.characterSheet .secondRow {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid black;
+  margin-bottom: 10px;
+}
+
+.characterSheet .thirdRow {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid black;
+  margin-bottom: 10px;
+}
+
+.attributeSection {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.attributeImage {
+  display: block;
+}
+
+.no-resize {
+  width: 300px;
+  height: auto;
+}
+
+.characterSheetText {
+  font-size: 50px;
+}
+
+.courage {
+  position: absolute;
+  top: 222px;
+  left: 190px;
+}
+.selfControl {
+  position: absolute;
+  top: 222px;
+  left: 310px;
+}
+.wisdom {
+  position: absolute;
+  top: 249px;
+  left: 249px;
+}
+.sharpness {
+  position: absolute;
+  top: 339px;
+  left: 249px;
+}
+.money {
+  position: absolute;
+  top: 277px;
+  left: 249px;
+}
+.maxHP {
+  position: absolute;
+  top: 277px;
+  left: 249px;
+}
+.maxCurseResistance {
+  position: absolute;
+  top: 277px;
+  left: 249px;
+}

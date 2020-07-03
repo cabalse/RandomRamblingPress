@@ -5,12 +5,12 @@ import CharacterSheet from './CharacterSheet';
 
 export default function YokaiHuntersSociatyPage() {
   return (
-    <Container>
-      <Row className="justify-content-md-center">
-        <Col className="col-5">
+    <div>
+      <div>
+        <div className="col-12">
           <CharacterSheet />
-        </Col>
-      </Row>
-    </Container>
+        </div>
+      </div>
+    </div>
   );
 }
