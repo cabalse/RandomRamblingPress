@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
-import productImage from './../resources/images/130x200.jpg';
 import dungescape1 from './../resources/images/dungescape_1.jpg';
+import demonHunterTshirt from './../resources/images/demon_hunters-tshirt.png';
 
 import './../components/products/products';
 
@@ -43,6 +43,44 @@ export default class ProductsPage extends Component {
           </Col>
 				</Row>
 				**/}
+
+        {/* Demon Hunters T-shirt **/}
+        <Row className="product m-1 pt-3 pb-3">
+          <Col className="product-image col-auto">
+            <Image src={demonHunterTshirt} />
+          </Col>
+          <Col className="product-text justify-content-start">
+            <h1>Demon Hunters</h1>
+            <p>
+              <i>Join the Demon Hunters. Protect humankind from evil demons!</i>
+              <br />
+              The Demon Hunters t-shirts are a tribute to the wonderful ttrpg
+              ruleset Yokia Hunters Society
+            </p>
+            <table className="product-info">
+              <tbody>
+                <tr>
+                  <th scope="row">Format</th>
+                  <td>T-shirt</td>
+                </tr>
+              </tbody>
+            </table>
+            <Container className="pt-3 pl-0 ml-0">
+              <Row>
+                <Col>
+                  <a
+                    href="https://shop.spreadshirt.se/random-rambling-press/"
+                    target="_blank"
+                  >
+                    To buy, go to our Spreadshirt store
+                  </a>
+                </Col>
+              </Row>
+            </Container>
+          </Col>
+        </Row>
+
+        {/* Dungescape Issue 1 **/}
         <Row className="product m-1 pt-3 pb-3">
           <Col className="product-image col-auto">
             <Image src={dungescape1} />
@@ -119,7 +157,7 @@ export default class ProductsPage extends Component {
                   <a href="">Read More about ...</a>
                 </Col>
               </Row>
-		</Container>
+						</Container>
             <Container className="pt-3 pl-0">
               <Row>
                 <Col>
