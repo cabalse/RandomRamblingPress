@@ -1,11 +1,16 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
+import { useParams } from 'react-router-dom';
 
 import jorgenProfileImage from './../resources/images/jorgen_profile.jpg';
 import { FluidContainer, Row, Col } from './../components/bootstrap/Bootstrap';
+import LoginModal from '../components/loginModal/loginModal';
 
-export default class AboutPage extends Component {
-  render() {
-    return (
+export default function AboutPage() {
+  let { gear } = useParams();
+  console.log(useParams());
+  const [displayLogin, setDisplayLogin] = useState(gear === 'login');
+  return (
+    <>
       <FluidContainer className="pl-0 pr-sm-5">
         <Row>
           <Col>
@@ -85,6 +90,7 @@ export default class AboutPage extends Component {
           </Col>
         </Row>
       </FluidContainer>
-    );
-  }
+      <LoginModal display={displayLogin} />
+    </>
+  );
 }
