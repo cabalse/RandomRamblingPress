@@ -2,10 +2,10 @@
 }
 
 @media (min-width: 576px) {
-    .page-container {
-        height: 100% !important;
-    }
-    .page-row {
-        height: 100% !important;
-    }
+  .page-container {
+    height: 100% !important;
+  }
+  .page-row {
+    height: 100% !important;
+  }
 }
