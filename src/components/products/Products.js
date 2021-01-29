@@ -1,42 +1,56 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { Row, Col, Image } from './../../components/bootstrap/Bootstrap';
+import { useQuery, gql } from '@apollo/client';
 
-import productImage from './../../resources/images/130x200.jpg';
+import { product_image_path } from './../../Config';
+import ProductTitle from './productTitle';
+import ProductIntro from './productIntro';
+import ProductDescription from './productDescription';
+import ProductInformation from './productInformation';
+import ProductLink from './productLink';
+
 import './products.css';
 
-import { GetProducts } from './../../services/ProductAPI';
-import {
-  FluidContainer,
-  Container,
-  Row,
-  Col,
-  Image
-} from './../../components/bootstrap/Bootstrap';
-
-export default class Products extends Component {
-  constructor() {
-    super();
-    this.state = { isLoaded: false, productData: [] };
+const ALL_PRODUCTS = gql`
+  query {
+    allProducts {
+      id
+      date
+      image
+      title
+      intro
+      description
+      type
+      format
+      pages
+      status
+      price
+      linktext
+      link
+    }
   }
+`;
 
-  componentDidMount() {
-    this.setState({ isloaded: true, productData: GetProducts() });
-  }
+const Products = () => {
+  const { loading, error, data } = useQuery(ALL_PRODUCTS);
 
-  render() {
-    return (
-      <Row className="product">
-        <Col className="">
-          <Image src={productImage} />
-        </Col>
-        <Col className="">
-          <h1>Dungescape</h1>
-          Aliquam erat volutpat. In ac ultrices eros. In vel eros ut neque
-          laoreet fringilla. Vivamus pretium, lacus eu hendrerit feugiat, magna
-          orci posuere dolor, id rhoncus nisi erat ut tellus. Nulla cursus dolor
-          et nulla euismod volutpat. Suspendisse finibus vel nunc at euismod.
-          Morbi eu varius leo.
-        </Col>
-      </Row>
-    );
-  }
-}
+  if (loading) return <p>Loading...</p>;
+  if (error) return <p>Error :(</p>;
+
+  return data.allProducts.map((item) => (
+    <Row key={item.id} className="product m-1 pt-3 pb-3">
+      <Col className="product-image col-auto">
+        <Image src={product_image_path + item.image} />
+      </Col>
+      <Col className="product-text justify-content-start">
+        <ProductTitle title={item.title} />
+        <ProductIntro intro={item.intro} />
+        <ProductDescription description={item.description} />
+        <ProductInformation item={item} />
+        <ProductLink linkText={item.linktext} link={item.link} />
+      </Col>
+    </Row>
+  ));
+};
+
+export default Products;
