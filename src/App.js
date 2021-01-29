@@ -9,7 +9,7 @@ import Sidebar from './components/sidebar/Sidebar';
 import MainContent from './components/mainContent/MainContent';
 
 const client = new ApolloClient({
-  uri: 'http://localhost:8080/service',
+  uri: 'http://randomramblingpress.se/service/graphql/',
   cache: new InMemoryCache()
 });
 
