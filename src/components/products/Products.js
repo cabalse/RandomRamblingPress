@@ -2,6 +2,7 @@ import React from 'react';
 import { Row, Col, Image } from './../../components/bootstrap/Bootstrap';
 import { useQuery, gql } from '@apollo/client';
 
+import { product_image_path } from './../../Config';
 import ProductTitle from './productTitle';
 import ProductIntro from './productIntro';
 import ProductDescription from './productDescription';
@@ -39,9 +40,7 @@ const Products = () => {
   return data.allProducts.map((item) => (
     <Row key={item.id} className="product m-1 pt-3 pb-3">
       <Col className="product-image col-auto">
-        <Image
-          src={'http://randomramblingpress.se/images/products/' + item.image}
-        />
+        <Image src={product_image_path + item.image} />
       </Col>
       <Col className="product-text justify-content-start">
         <ProductTitle title={item.title} />

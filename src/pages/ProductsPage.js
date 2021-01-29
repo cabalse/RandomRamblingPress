@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
 
-import dungescape1 from './../resources/images/dungescape_1.jpg';
-import demonHunterTshirt from './../resources/images/demon_hunters-tshirt.png';
-
 import './../components/products/products';
 
 import {

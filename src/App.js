@@ -7,9 +7,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { FluidContainer, Row, Col } from './components/bootstrap/Bootstrap';
 import Sidebar from './components/sidebar/Sidebar';
 import MainContent from './components/mainContent/MainContent';
+import { gql_products } from './Config';
 
 const client = new ApolloClient({
-  uri: 'http://randomramblingpress.se/service/graphql/',
+  uri: gql_products,
   cache: new InMemoryCache()
 });
 
