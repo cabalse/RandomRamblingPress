@@ -25,6 +25,11 @@ export function Col({ children, className }) {
   return <Div className={classes}>{children}</Div>;
 }
 
+export function ColA({ children, className }) {
+  const classes = 'col-auto ' + className;
+  return <Div className={classes}>{children}</Div>;
+}
+
 export function Image({ children, className, src }) {
   return <img className={className} src={src} />;
 }
