@@ -1,7 +1,7 @@
+import { Col, FluidContainer, Row } from './../components/bootstrap/Bootstrap';
 import React, { Component } from 'react';
 
 import jorgenProfileImage from './../resources/images/jorgen_profile.jpg';
-import { FluidContainer, Row, Col } from './../components/bootstrap/Bootstrap';
 
 export default class AboutPage extends Component {
   render() {
@@ -64,21 +64,22 @@ export default class AboutPage extends Component {
           <Col>
             <b>NAME:</b> J Bengtsson
             <br />
-            <b>YEARS IN HOBBY:</b> 7 years roleplaying and a lifetime
+            <b>YEARS IN HOBBY:</b> 10 years roleplaying and a lifetime
             boardgaming
             <br />
             <b>FAVORITE GAME:</b> Ghost Recon Wildlands by Ubisoft
             <br />
-            <b>BEST RPG RULESET:</b> Into the Odd by Chris McDowall
+            <b>BEST RPG RULESETS:</b> Electric Bastionland, Yokai Hunters
+            Society, Ghost Orbit
             <br />
             <b>BEST RPG MODULE:</b> Winter's Daughter by Necrotic Gnome
             <br />
             <b>MOST MEMORABLE PLAY:</b> Village of the Damned, Into the Jungle
             at KryptCon 1<br />
-            <b>LOOKING FORWARD TO:</b> The Forest Hymn & Picninc, Labyrinth: The
-            Adventure Game
+            <b>LOOKING FORWARD TO:</b> The Dee Sanction: Elizabethan Agents of
+            the Supernatural
             <br />
-            <b>FAVORITE GENRE:</b> Sci-fi and Horror
+            <b>FAVORITE GENRE:</b> Horror, Investigation and Sci-Fi
             <br />
             <b>WHERE DO I FIND INSPIRATION?</b> Movies and tv series
             <br />
