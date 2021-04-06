@@ -6,6 +6,7 @@ import { Col, FluidContainer, Row } from './components/bootstrap/Bootstrap';
 import Context, { DEFAULT, GAMING } from './context';
 import React, { Component } from 'react';
 
+import GamingArea from './components/gamingArea/GamingArea';
 import MainContent from './components/mainContent/MainContent';
 import { BrowserRouter as Router } from 'react-router-dom';
 import Sidebar from './components/sidebar/Sidebar';
@@ -46,7 +47,9 @@ export default class App extends Component {
                     <MainContent />
                   </Col>
                 </Row>
-              ) : null}
+              ) : (
+                <GamingArea />
+              )}
             </FluidContainer>
           </Router>
         </ApolloProvider>

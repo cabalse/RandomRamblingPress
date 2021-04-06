@@ -1,0 +1,16 @@
+.gamingArea {
+  background-color: black;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+
+  .imageSection {
+    margin-bottom: 30px;
+  }
+
+  .title {
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+}
