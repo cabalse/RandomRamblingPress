@@ -1,11 +1,13 @@
-import React, { Component } from 'react';
-import { Switch, Route } from 'react-router-dom';
-
 import './MainContent.css';
+
+import React, { Component } from 'react';
+import { Route, Switch } from 'react-router-dom';
+
+import AboutPage from './../../pages/AboutPage';
 import HomePage from './../../pages/HomePage';
 import ProductsPage from './../../pages/ProductsPage';
 import ProjectsPage from './../../pages/ProjectsPage';
-import AboutPage from './../../pages/AboutPage';
+import SwitchToGaming from '../switchToGaming/SwitchToGaming';
 
 export default class MainContent extends Component {
   render() {
@@ -20,6 +22,9 @@ export default class MainContent extends Component {
           </Route>
           <Route path="/about">
             <AboutPage />
+          </Route>
+          <Route path="/gaming">
+            <SwitchToGaming />
           </Route>
           <Route path="/">
             <HomePage />
